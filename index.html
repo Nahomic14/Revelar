@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje Oculto</title>
+    <link rel="stylesheet" href="css/estiloci.css">
+</head>
+<body>
+    <div id="primero">
+        <h2>Cifrador</h2>
+    </div>
+    
+    <div id="container1">
+        <input type="text" required id="mensajeInicial1" placeholder="Escribe tu mensaje inicial...">
+        <button id="encriptButton1" onclick="encriptMessage()">Cifrar</button>
+        <button class="resetButton" onclick="resetContainer(1)">Reiniciar</button>
+        <output disabled type="text" id="resultado1"></output>
+    </div>
+
+    <div id="segundo">
+        <h2>Descifrador</h2>
+    </div>
+    
+    <div id="container2">
+        <input type="text" id="mensajeInicial2" placeholder="Escribe tu mensaje cifrado...">
+        <button id="decryptButton" onclick="decryptMessage()">Descifrar</button>
+        <button class="resetButton" onclick="resetContainer(2)">Reiniciar</button>
+        <output disabled type="text" id="resultado2"></output>
+    </div>
+    
+    <script src="js/cifrador.js"></script>
+</body>
+</html>
